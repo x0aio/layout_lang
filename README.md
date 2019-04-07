@@ -23,6 +23,13 @@ Enlace entre dos posiciones. Se crea sumando (`+`) dos posiciones
 
 Puede tener un alias o un weight (peso), que se definen con `with { ... }'
 
+## Ventajas
+
+- Es un lenguaje compilado
+- Puede usarse un IDE que ayude a escribir el código
+- Se pueden usar bucles y funciones para que el código quede más simple y estructurado
+- Se puede usar como configuración de un sistema de control
+- Añadiendo etiquetas con coordenadas podría generarse un representación gráfica
 
 ## Ejemplo
 
