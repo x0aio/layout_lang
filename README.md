@@ -1,6 +1,6 @@
 # Layout Lang
 
-Este proyecto es un experimento de [DSL](https://en.wikipedia.org/wiki/Domain-specific_language) 
+Este proyecto es un experimento de [DSL](https://en.wikipedia.org/wiki/Domain-specific_language), 
 pero orientado a modelar un dominio real. Pretende ser capaz de describir los mapas de instalaciones
 automáticas en fábricas y almacenes.
 
@@ -8,7 +8,7 @@ automáticas en fábricas y almacenes.
 
 ### Badge
 Etiqueta que aporta un comportamiento o completa la información de Area y Position.
-Se añadir los comportamientos necesarias para modelar el sistema.
+Se pueden añadir los comportamientos necesarios para modelar el sistema.
 
 ### Area
 Zona a la que pertenecen las posiciones. Se crea como `area("NOMBRE_AREA")`
@@ -16,7 +16,7 @@ Se pueden añadir badges con el operador `+`
 
 ### Position
 Posición dentro de un área. Se crean como `variable_area("NOMBRE_POSICION")`
-Se pueden añadir badges con el operador `+`. Puede asociarsele un Link por defecto.
+Se pueden añadir badges con el operador `+`. Puede asociársele un Link por defecto.
 
 ### Link
 Enlace entre dos posiciones. Se crea sumando (`+`) dos posiciones 
@@ -29,11 +29,11 @@ Puede tener un alias o un weight (peso), que se definen con `with { ... }'
 - Puede usarse un IDE que ayude a escribir el código
 - Se pueden usar bucles y funciones para que el código quede más simple y estructurado
 - Se puede usar como configuración de un sistema de control
-- Podría crearse una herramienta para generar un representación gráfica
+- Podría crearse una herramienta para generar una representación gráfica
 
 ## Ejemplo
 
-Esto es un ejemplo de como se describiría una instalación con las siguientes caracterísicas
+Esto es un ejemplo de como se describiría una instalación con las siguientes caracterísicas:
  - Punto de entrada con los siguientes destinos:
     - 5 barras
     - continuar al punto de picking
