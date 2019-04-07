@@ -24,6 +24,16 @@ Enlace entre dos posiciones. Se crea sumando (`+`) dos posiciones
 Puede tener un alias o un weight (peso), que se definen con `with { ... }'
 
 
+## Ejemplo
+
+Esto es un ejemplo de como se describiría una instalación con las siguientes caracterísicas
+ - Punto de entrada con los siguientes destinos:
+    - 5 barras
+    - continuar al punto de picking
+ - Punto de picking con los siguientes destinos:
+    - 2 salidas
+    - recircular a la entrada
+    
 
 ```
 layout {
