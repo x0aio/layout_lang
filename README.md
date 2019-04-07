@@ -29,7 +29,7 @@ Puede tener un alias o un weight (peso), que se definen con `with { ... }'
 - Puede usarse un IDE que ayude a escribir el código
 - Se pueden usar bucles y funciones para que el código quede más simple y estructurado
 - Se puede usar como configuración de un sistema de control
-- Añadiendo etiquetas con coordenadas podría generarse un representación gráfica
+- Podría crearse una herramienta para generar un representación gráfica
 
 ## Ejemplo
 
@@ -55,22 +55,19 @@ layout {
 
     for (i in 1..5) {
         enterPosition + inductionsArea("PLC1_10$i") {
-            + BusinessName("BAR_$i")
-            + Bar
+            + Bar("BAR_$i", 5.meters)
         }
     }
-    
+
     val pickPosition = inductionsArea("PLC1_201") {
         + RequestTarget
 
         + inductionsArea("PLC1_202") {
-            + BusinessName("OUTPUT_1")
-            + Output
+            + Output("OUTPUT_1")
         }
 
         + inductionsArea("PLC1_203") {
-            + BusinessName("OUTPUT_1")
-            + Output
+            + Output("OUTPUT_1")
         }
 
         default = + enterPosition with {
