@@ -1,2 +1,4 @@
 rootProject.name = 'layout-lang'
-
+include 'lib'
+findProject(':lib')?.name = 'layout-lang'
+include 'java-launcher'
